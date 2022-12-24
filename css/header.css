@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  background: #fff;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(27.5px);
+          backdrop-filter: blur(27.5px);
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  padding: 18px 0;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #374D20;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.logo-icon {
+  width: 35px;
+  min-width: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 6px 0 0;
+}
+
+.logo-name {
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  max-width: 78px;
+}
+
+.logo-time {
+  margin: 0 0 0 2px;
+  font-size: 34px;
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.nav-menu {
+  margin: 0 auto;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 14px;
+}
+.menu li {
+  margin: 0 27px 0 0;
+}
+.menu li:last-child {
+  margin: 0;
+}
+.menu li a {
+  color: #000000;
+  position: relative;
+  z-index: 1;
+}
+.menu li a:hover {
+  color: #fff;
+}
+.menu li a:hover::before {
+  height: calc(100% + 6px);
+  width: calc(100% + 10px);
+}
+.menu li a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  background: #5B9E44;
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 43px 0 0;
+}
+.list-social li {
+  margin: 0 13px 0 0;
+}
+.list-social li:last-child {
+  margin: 0;
+}
+.list-social li a:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}

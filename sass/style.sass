@@ -1,0 +1,292 @@
+@import 'fonts'
+@import 'vars'
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+	display: block
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+	content: ''
+	content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: normal
+	font-family: $default-font
+	font-weight: normal
+	background: #fff
+	color: #000
+
+img
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+a
+	display: block
+	text-decoration: none
+	transition: .3s ease
+	outline: none
+	width: fit-content
+
+	&:hover, &:focus
+		text-decoration: none
+
+input, textarea, select
+	outline: none
+	box-shadow: none
+	appearance: none
+	padding: 0 15px
+	box-sizing: border-box
+	font-family: $default-font
+	border: none
+	border-radius: 5px
+	width: 100%
+	height: 37px
+	background: #fff
+	color: #000
+	text-align: center
+	font-size: 12px
+
+	&::placeholder
+		color: #B3B3B3
+
+	&:hover, &:focus
+		outline: none
+		box-shadow: none
+
+label
+	display: block
+	width: 100%
+	margin: 0 0 12px
+
+	&:last-child
+		margin: 0
+
+textarea
+	resize: none
+	padding: 12px 17px
+	height: 103px
+
+button, .btn
+	outline: none
+	transition: .3s ease
+	cursor: pointer
+	box-shadow: none
+	font-family: 'Roboto', sans-serif
+	padding: 0
+	margin: 0
+	border: none
+	border-radius: 0
+
+	&:hover, &:focus
+		outline: none
+		box-shadow: none
+
+.btn
+	display: flex
+	align-items: center
+	justify-content: center
+	text-align: center
+	padding: 6px 10px
+	font-size: 14px
+	font-weight: 500
+	height: 37px
+	border-radius: 5px
+	transition: 0.3s ease
+	position: relative
+	span
+		position: relative
+		z-index: 1
+
+.btn-accent
+	background: $accent
+	color: #fff
+	overflow: hidden
+	&:hover
+		color: #fff
+		&:before, &::after
+			width: 50%
+	&:before, &::after
+		content: ''
+		position: absolute
+		// z-index: -1
+		height: 100%
+		width: 0
+		top: 0
+		background: $green
+		transition: .5s linear
+	&::before
+		left: 0
+		border-radius: 5px 0 0 5px
+	&::after
+		right: 0	
+		border-radius: 0 5px 5px 0
+
+.form
+	button
+		width: 100%		
+
+.svg-icon
+	display: inline-block
+	width: 100%
+	height: 100%
+
+strong, b
+	font-weight: bold
+	display: inline
+
+ul, ol
+	padding: 0 0 0 20px
+
+.my-ul
+	list-style: none
+	padding: 0
+
+.list-dots
+	list-style-type: disc
+
+.container
+	max-width: 1300px
+	padding: 0 10px
+
+.row
+	margin: 0 -10px
+	>*
+		padding: 0 10px
+
+h1
+	width: 100%
+	font-size: 24px
+	font-weight: bold
+	text-transform: uppercase
+	margin: 0 0 27px
+	color: #4D4D4D
+
+h2
+	width: 100%
+	text-transform: uppercase
+	margin: 0 0 37px
+	font-size: 24px
+	font-weight: bold
+	color: #4D4D4D
+
+.color-red
+	color: $red
+
+a.color-accent
+	color: $accent
+	&:hover
+		color: $red	
+
+.bg-light-grey
+	background: #F9F8F4
+
+.bg-red-gradient
+	background: linear-gradient(108.55deg, #C6494F 14.02%, #B0272E 92.23%)
+
+.bg-blue-gradient
+	background: linear-gradient(106.2deg, #82CDD8 6.61%, #1CA0B1 98.12%)
+
+.bg-green-gradient
+	background: linear-gradient(105.91deg, #5B9E44 0%, #3A941A 99.31%)
+
+.bg-yellow-gradient
+	background: linear-gradient(107.22deg, #FFCD54 2.5%, #EBA600 98.61%)
+
+.bg-orange-gradient
+	background: linear-gradient(106.07deg, #FEC878 3.12%, #E9A43F 100%)
+
+.bg-black
+	background: #000000
+
+.wrapper
+	padding: 77px 0 0
+	width: 100%	
+
+// slick	
+.slick-slider
+	width: 100%
+
+.slick-slide
+	outline: none
+
+.slider-products
+	.slick-slide
+		height: auto
+		padding: 0 10px
+	// .slick-track
+	// 	margin: 0 -10px
+	// .slick-list
+
+// slick	end	
+
+//checkbox my
+.label-checkbox
+	position: relative
+	display: flex
+	align-items: flex-start
+	color: rgba(255, 255, 255, 0.5)
+	font-size: 14px
+	margin: 15px 0 0
+	line-height: 1.14
+
+.inp-check
+	display: none
+
+.checkbox-custom
+	margin: 0 12px 0 0
+	position: relative
+	border-radius: 6px
+	background-color: #fff
+	width: 16px
+	height: 16px
+	min-width: 16px
+	cursor: pointer
+
+.inp-check:checked ~ .checkbox-custom
+	background: #fff url("../img/check-black.svg") no-repeat center
+	background-size: 8px
+//checkbox my end
+
+.link-page
+	@include d-flex
+	width: 32px
+	height: 32px
+	min-width: 32px
+	fill: #5B9E44
+	&:hover
+		fill: $red
+		transform: rotate(360deg)	

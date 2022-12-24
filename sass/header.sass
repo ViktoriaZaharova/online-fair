@@ -1,0 +1,86 @@
+@import "fonts"
+@import "vars"
+
+// header	
+header
+	position: fixed
+	z-index: 5
+	width: 100%
+	background: #fff
+	top: 0
+	left: 0
+	backdrop-filter: blur(27.5px)
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05)
+	padding: 18px 0
+
+.logo
+	display: flex
+	align-items: center
+	color: $green
+	font-weight: bold
+	text-transform: uppercase
+
+.logo-icon
+	width: 35px
+	min-width: 35px
+	@include d-flex
+	margin: 0 6px 0 0
+
+.logo-name
+	text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05)
+	font-size: 14px
+	max-width: 78px
+
+.logo-time
+	margin: 0 0 0 2px
+	font-size: 34px
+	text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05)		
+
+.nav-menu
+	margin: 0 auto
+
+.menu
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	font-size: 14px
+	li
+		margin: 0 27px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #000000
+			position: relative
+			z-index: 1
+			&:hover
+				color: #fff
+				&::before
+					height: calc(100% + 6px)
+					width: calc(100% + 10px)
+			&::before
+				content: ''
+				position: absolute
+				z-index: -1
+				transition: .4s ease
+				background: $accent
+				width: 0
+				height: 0
+				left: 50%
+				top: 50%
+				transform: translate(-50%,-50%)		
+
+.list-social
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 43px 0 0
+	li
+		margin: 0 13px 0 0
+		&:last-child
+			margin: 0
+		a
+			&:hover
+				filter: invert(1)
+
+// header end	
+
