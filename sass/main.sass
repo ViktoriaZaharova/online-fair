@@ -12,7 +12,6 @@
 		width: 100%
 		margin: 0 0 38px
 
-
 .home-image
 	position: absolute
 	right: -22px
@@ -22,14 +21,13 @@
 	display: flex
 	align-items: flex-end
 
-
 .home-banner
 	width: calc(100% - 22px)
 	position: relative
 	border-radius: 10px
 	background: url('../img/home-bg.jpg') no-repeat center
 	background-size: cover
-	padding: 55px 51px 47px 
+	padding: 55px 51px 47px
 
 .home-box
 	max-width: 471px
@@ -52,7 +50,7 @@
 		&::placeholder
 			color: #000000
 	label
-		margin: 0	
+		margin: 0
 	button
 		background: transparent
 		width: 24px
@@ -69,7 +67,7 @@
 	color: #fff
 	background: #F93E5E
 	border-radius: 5px
-	padding: 10px 22px 
+	padding: 10px 22px
 	font-size: 14px
 	font-weight: 500
 	&::before
@@ -83,7 +81,7 @@
 		background-size: 100%
 	&:hover
 		color: #fff
-		background: $accent	
+		background: $accent
 
 .callback-box
 	width: 100%
@@ -109,29 +107,34 @@
 
 // top products
 .link-catalog
-	margin: 0 0 42px auto	
+	margin: 0 0 42px auto
 
 .card
 	width: 100%
 	height: 100%
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05)
 	background: #fff
-	border-radius: 0px 0px 10px 10px
+	border-radius: 10px
 	font-size: 14px
+	margin: 0 0 30px
+	border: none
+	transition: .4s ease
+	position: relative
 	&-image
 		width: 100%
 		height: 229px
 		border-radius: 10px 10px 0px 0px
 		filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.05))
 		overflow: hidden
+		position: relative
 		@include d-flex
 		img
 			width: 100%
 			height: 100%
-			object-fit: cover	
+			object-fit: cover
 	.card-body
 		position: relative
-		padding: 20px 19px 20px 16px
+		padding: 20px 50px 20px 16px
 	.link-page
 		position: absolute
 		right: 20px
@@ -143,10 +146,234 @@
 		margin: 0 0 4px
 		&:hover
 			color: $accent
+	&:hover
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1)
 
 .name-business
 	color: #666666
-	font-size: 12px	
-					
+	font-size: 12px
+
+.favorite-item
+	position: absolute
+	top: 13px
+	right: 17px
+	@include d-flex
+	width: 30px
+	height: 30px
+
+.list-tags
+	margin: 18px 0 0
+	font-size: 10px
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
+	li
+		margin: 0 5px 2px 0
+		&:last-child
+			margin: 0 0 2px
+		a
+			color: #fff
+			background: #68A500
+			border-radius: 5px
+			padding: 4px 8px
+			&:hover
+				background: $red
+				color: #fff
 // top products end	
 
+// categories
+.categories
+	margin: 50px 0 48px
+	h2
+		margin: 0 0 40px
+
+.category-card
+	width: 100%
+	height: 100%
+	position: relative
+	min-height: 224px
+	color: #fff
+	border-radius: 10px
+	transition: .3s ease
+	z-index: 1
+	padding: 20px 20px 25px
+	display: flex
+	flex-direction: column
+	font-size: 14px
+	&__img
+		position: absolute
+		z-index: -1
+		top: 50%
+		transform: translate(0,-50%)
+		right: 23px
+		max-width: 225px
+		height: 165px
+		img
+			max-height: 100%
+	&__title
+		font-size: 20px
+		font-weight: bold
+	&__offer
+		width: 100%
+		margin: auto 0 0
+	&:hover
+		color: #fff
+		transform: translateY(-5px)
+
+.category-card-all
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+	padding: 20px 38px
+	.category-card__title
+		font-size: 24px
+	.category-card__icon
+		fill: #fff
+		width: 90px
+		height: 90px
+		min-width: 90px
+		@include d-flex
+
+// categories end
+
+// popular-manufacturers	
+.popular-manufacturers
+	padding: 80px 0 26px
+// popular-manufacturers end	
+
+// .new-manufacturers
+.new-manufacturers
+	margin: 53px 0 0
+
+.manufacturer-card
+	position: relative
+	min-height: 348px
+	z-index: 1
+	color: #fff
+	.list-tags
+		position: absolute
+		padding: 15px
+		left: 0
+		top: 0
+		margin: 0
+	&::before
+		content: ''
+		position: absolute
+		border-radius: 0px 0px 10px 10px
+		filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.05))
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)
+		width: 100%
+		height: 158px
+		// z-index: -1
+		left: 0
+		bottom: 0
+	&__image
+		width: 100%
+	.card-body
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		padding: 18px 16px
+	.link-page
+		position: absolute
+		right: 19px
+		top: 18px
+		fill: #fff
+		&:hover
+			fill: $accent
+	.card-title
+		color: #fff
+		&:hover
+			color: $accent
+	.name-business
+		color: #fff
+// .new-manufacturers end
+
+// maps-farmers	
+.maps-farmers
+	margin: 60px 0
+	h2
+		margin: 0 0 47px
+
+.map-wrapper
+	width: 100%
+	height: 702px
+	iframe
+		width: 100%
+		height: 100%
+// maps-farmers end
+
+// partners	
+.partners-box
+	display: flex
+	align-items: center
+	width: 100%
+	color: #666666
+	&__logo
+		@include d-flex
+		height: 66px
+		width: 67px
+		min-width: 67px
+		margin: 0 10px 0 0
+		img
+			max-height: 100%
+
+.partners-slider
+	.slick-arrow
+		border: 4px solid #FFB800
+		background: transparent
+		stroke: #FFB800
+// partners end	
+
+// cooperation	
+.cooperation
+	margin: 94px 0 0
+
+.cooperation-wrapper
+	width: 100%
+	position: relative
+	z-index: 1
+	background: #D9D9D9 url('../img/cooperation-bg.jpg') no-repeat center
+	background-size: cover
+	padding: 24px 22px 33px 45px
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	color: #fff
+	border-radius: 10px
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		left: 0
+		top: 0
+		border-radius: 10px 0px 0px 10px
+		height: 100%
+		max-width: 686px
+		width: 100%
+		background: linear-gradient(90deg, #5B9E44 0%, rgba(91, 158, 68, 0) 100%)
+	h2
+		color: #fff
+		margin: 0 0 16px
+		font-size: 48px
+
+	.callback-box
+		max-width: 302px
+		margin: 0 0 0 auto
+	.box-text
+		margin: 56px 0 0
+		max-width: 490px
+		font-size: 24px
+		line-height: 29px	
+
+.cooperation-content
+	width: calc(100% - 302px)
+
+.subtitle
+	text-transform: uppercase
+	font-size: 24px
+	max-width: 480px
+	width: 100%	
+// cooperation end	

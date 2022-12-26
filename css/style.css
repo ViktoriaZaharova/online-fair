@@ -192,8 +192,8 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   width: 0;
   top: 0;
   background: #374D20;
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 .btn-accent::before {
   left: 0;
@@ -202,6 +202,55 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 .btn-accent::after {
   right: 0;
   border-radius: 0 5px 5px 0;
+}
+
+.btn-white {
+  background: #fff;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  color: #B3B3B3;
+  padding: 5px 11px;
+  height: 29px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.btn-white:hover {
+  color: #fff;
+}
+.btn-white:hover:before, .btn-white:hover::after {
+  width: 50%;
+}
+.btn-white:before, .btn-white::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  background: #374D20;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+.btn-white::before {
+  left: 0;
+  border-radius: 5px 0 0 5px;
+}
+.btn-white::after {
+  right: 0;
+  border-radius: 0 5px 5px 0;
+}
+.btn-white .btn-icon {
+  margin: 0 0 0 10px;
+  width: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .form button {
@@ -318,6 +367,63 @@ a.color-accent:hover {
   height: auto;
   padding: 0 10px;
 }
+.slider-products .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.slider-products .slick-list {
+  margin: 0 -10px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background: #5B9E44;
+  cursor: pointer;
+  fill: none;
+  stroke: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slick-arrow svg {
+  width: 12px;
+  height: 23px;
+}
+.slick-arrow:hover {
+  background: #374D20;
+}
+
+.slick-next {
+  right: -73px;
+}
+
+.slick-prev {
+  left: -73px;
+}
+.slick-prev svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.slick-disabled {
+  opacity: 0;
+}
 
 .label-checkbox {
   position: relative;
@@ -372,4 +478,8 @@ a.color-accent:hover {
   fill: #FF0035;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
