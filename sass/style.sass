@@ -46,6 +46,9 @@ body
 	background: #fff
 	color: #000
 
+html, body
+	overflow-x: hidden	
+
 img
 	display: block
 	max-width: 100%
@@ -164,7 +167,6 @@ button, .btn
 	font-size: 12px
 	font-weight: normal
 	&:hover
-		// background: $accent
 		color: #fff
 		&:before, &::after
 			width: 50%
@@ -281,11 +283,14 @@ a.color-accent
 	.slick-slide
 		height: auto
 		padding: 0 10px
+		margin: 0 0 30px
 	.slick-track
 		display: flex
-		align-items: start
+		align-items: stretch
 	.slick-list
 		margin: 0 -10px
+	.slick-arrow
+		top: 40%	
 
 .slick-arrow
 	position: absolute
@@ -299,12 +304,12 @@ a.color-accent
 	fill: none
 	stroke: #fff
 	@include d-flex
+	transition: .3s ease
 	svg
 		width: 12px
 		height: 23px
 	&:hover
 		background: $green
-
 
 .slick-next
 	right: -73px
@@ -315,7 +320,19 @@ a.color-accent
 		transform: rotate(180deg)		
 
 .slick-disabled
-	opacity: 0
+	display: none !important
+
+.slider-nav
+	display: flex
+	align-items: center
+	.slick-arrow
+		position: relative
+		top: 0
+		right: 0
+		left: 0
+		transform: none	
+	.slick-prev
+		margin: 0 5px 0 0	
 // slick	end	
 
 //checkbox my

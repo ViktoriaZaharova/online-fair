@@ -34,6 +34,10 @@
   background-size: cover;
   padding: 55px 51px 47px;
 }
+.home-banner__content {
+  position: relative;
+  z-index: 1;
+}
 
 .home-box {
   max-width: 471px;
@@ -177,7 +181,6 @@
   background: #fff;
   border-radius: 10px;
   font-size: 14px;
-  margin: 0 0 30px;
   border: none;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;

@@ -50,6 +50,10 @@ body {
   color: #000;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -366,17 +370,21 @@ a.color-accent:hover {
 .slider-products .slick-slide {
   height: auto;
   padding: 0 10px;
+  margin: 0 0 30px;
 }
 .slider-products .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 .slider-products .slick-list {
   margin: 0 -10px;
+}
+.slider-products .slick-arrow {
+  top: 40%;
 }
 
 .slick-arrow {
@@ -400,6 +408,8 @@ a.color-accent:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .slick-arrow svg {
   width: 12px;
@@ -422,7 +432,27 @@ a.color-accent:hover {
 }
 
 .slick-disabled {
-  opacity: 0;
+  display: none !important;
+}
+
+.slider-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider-nav .slick-arrow {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  -webkit-transform: none;
+          transform: none;
+}
+.slider-nav .slick-prev {
+  margin: 0 5px 0 0;
 }
 
 .label-checkbox {

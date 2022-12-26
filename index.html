@@ -36,14 +36,24 @@
 						</a>
 
 						<nav class="nav-menu">
+							<a href="index.html" class="logo d-flex d-md-none">
+								<span class="logo-icon"><img src="img/logo-mobile.svg" alt=""></span>
+								<span class="logo-name">Онлайн Ярмарка</span>
+								<span class="logo-time color-red">24/7</span>
+							</a>
 							<ul class="menu my-ul">
 								<li><a href="about.html">о площадке</a></li>
 								<li><a href="statistic-data.html">статистические данные</a></li>
 								<li><a href="shops.html">розничным магазинам</a></li>
 							</ul>
+							<ul class="list-social my-ul d-flex d-md-none">
+								<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/tg.svg" alt=""></a></li>
+							</ul>
+							<a href="#" class="btn btn-white d-flex d-md-none">хочу сотрудничать</a>
 						</nav>
 
-						<ul class="list-social my-ul">
+						<ul class="list-social my-ul d-none d-md-flex">
 							<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
 							<li><a href="#"><img src="img/tg.svg" alt=""></a></li>
 						</ul>
@@ -52,6 +62,12 @@
 							<span class="btn-text">войти</span>
 							<span class="btn-icon"><img src="img/user.svg" alt=""></span>
 						</a>
+
+						<div class="btn-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -60,28 +76,30 @@
 		<main class="home">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-lg-9">
+					<div class="col-12 col-md-8 col-lg-9">
 						<div class="home-banner">
-							<h1>ПЛОЩАДКА <strong>ПЕНЗЕНСКИХ ПРОИЗВОДИТЕЛЕЙ</strong> СЕЛЬХОЗ ПРОДУКЦИИ</h1>
-							<div class="home-box">
-								<a href="catalog.html" class="category-link">продукция</a>
+							<div class="home-banner__content">
+								<h1>ПЛОЩАДКА <strong>ПЕНЗЕНСКИХ ПРОИЗВОДИТЕЛЕЙ</strong> СЕЛЬХОЗ ПРОДУКЦИИ</h1>
+								<div class="home-box">
+									<a href="catalog.html" class="category-link">продукция</a>
 
-								<form method="post" class="form-search">
-									<label>
-										<input type="text" placeholder="поиск" name="search">
-									</label>
-									<button type="submit">
-										<svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#search"></use>
-										</svg>
-									</button>
-								</form>
+									<form method="post" class="form-search">
+										<label>
+											<input type="text" placeholder="поиск" name="search">
+										</label>
+										<button type="submit">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#search"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
 							</div>
 
 							<div class="home-image"><img src="img/men.png" alt=""></div>
 						</div>
 					</div>
-					<div class="col-12 col-lg-3">
+					<div class="col-12 col-md-4 col-lg-3">
 						<div class="callback-box">
 							<h3>Готовы сотрудничать?</h3>
 							<form method="post" class="form">
@@ -109,11 +127,12 @@
 		<section class="top-products">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-md-7 col-lg-8">
+					<div class="col-12 col-md-7 col-lg-8 d-flex align-items-center">
 						<h2>Товары к Новому году и Рождеству</h2>
+						<div class="slider-nav top-products-slider__nav"></div>
 					</div>
 
-					<div class="col-12 col-md-5 col-lg-4">
+					<div class="col-12 col-md-5 col-lg-4 d-none d-md-block">
 						<a href="catalog.html" class="color-accent link-catalog">Смотреть все предложения</a>
 					</div>
 				</div>
@@ -198,6 +217,10 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="col-12 d-block d-md-none">
+						<a href="catalog.html" class="color-accent link-catalog">Смотреть все предложения</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -211,21 +234,21 @@
 				</div>
 
 				<div class="row">
-					<div class="col-12 col-sm-6 col-lg-4 mb-20">
+					<div class="col-6 col-lg-4 mb-20">
 						<a href="catalog.html" class="category-card bg-red-gradient">
 							<span class="category-card__title">Мясо</span>
 							<span class="category-card__img"><img src="img/category1.png" alt=""></span>
 							<span class="category-card__offer">Предложений: 9</span>
 						</a>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-4 mb-20">
+					<div class="col-6 col-lg-4 mb-20">
 						<a href="catalog.html" class="category-card bg-blue-gradient">
 							<span class="category-card__title">Молоко и молочная <br>продукция</span>
 							<span class="category-card__img"><img src="img/category2.png" alt=""></span>
 							<span class="category-card__offer">Предложений: 9</span>
 						</a>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-4 mb-20">
+					<div class="col-6 col-lg-4 mb-20">
 						<a href="catalog.html" class="category-card bg-green-gradient">
 							<span class="category-card__title">Картофель, овощи и зеленые
 								культуры</span>
@@ -233,7 +256,7 @@
 							<span class="category-card__offer">Предложений: 9</span>
 						</a>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-4 mb-20">
+					<div class="col-6 col-lg-4 mb-20">
 						<a href="catalog.html" class="category-card bg-yellow-gradient">
 							<span class="category-card__title">Продукция <br>
 								пчеловодства</span>
@@ -241,14 +264,14 @@
 							<span class="category-card__offer">Предложений: 9</span>
 						</a>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-4 mb-20">
+					<div class="col-6 col-lg-4 mb-20">
 						<a href="catalog.html" class="category-card bg-orange-gradient">
 							<span class="category-card__title">Зерно</span>
 							<span class="category-card__img"><img src="img/category5.png" alt=""></span>
 							<span class="category-card__offer">Предложений: 9</span>
 						</a>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-4 mb-20">
+					<div class="col-6 col-lg-4 mb-20">
 						<a href="catalog.html" class="category-card category-card-all bg-black">
 							<span class="category-card__title">Еще больше продуктов и товаров в каталоге</span>
 							<span class="category-card__icon"><svg class="svg-icon">
@@ -263,12 +286,13 @@
 		<section class="popular-manufacturers bg-light-grey">
 			<div class="container">
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 d-flex align-items-center">
 						<h2>Популярные производители на площадке</h2>
+						<div class="slider-nav popular-manufacturers-slider__nav"></div>
 					</div>
 
 					<div class="col-12">
-						<div class="slider-products top-products-slider">
+						<div class="slider-products popular-manufacturers-slider">
 							<div class="slide">
 								<div class="card">
 									<a href="manufacturer-card.html" class="card-image"><img src="img/manufacturer1.jpg" alt="">
