@@ -44,6 +44,17 @@ $('.partners-slider').slick({
 	infinite: false,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 1,
+				variableWidth: true,
+				appendArrows: '.partners-slider__nav',
+				infinite: false,
+			}
+		}
+	]
 });
 
 $('.new-manufacturers-slider').slick({
@@ -52,6 +63,17 @@ $('.new-manufacturers-slider').slick({
 	infinite: false,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 1,
+				variableWidth: true,
+				appendArrows: '.new-manufacturers-slider__nav',
+				infinite: false,
+			}
+		}
+	]
 });
 
 $('.btn-burger').on('click', function () {

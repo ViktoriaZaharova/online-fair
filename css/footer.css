@@ -57,3 +57,47 @@ footer .menu li a {
 .politics-links:hover {
   color: #000;
 }
+
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal-dialog {
+  max-width: 400px;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-header {
+  border: none;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 20px;
+}
+
+.modal-body {
+  padding: 0;
+}
+.modal-body .form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.modal-body .consent {
+  color: #666;
+}
+
+.modal-content {
+  border: none;
+  padding: 30px;
+  background: rgb(237, 255, 220);
+}

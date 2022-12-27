@@ -255,12 +255,13 @@
 	min-height: 348px
 	z-index: 1
 	color: #fff
+	border-radius: 10px
+	display: flex
+	flex-direction: column
 	.list-tags
-		position: absolute
 		padding: 15px
-		left: 0
-		top: 0
-		margin: 0
+		width: 100%
+		margin: 0 0 auto
 	&::before
 		content: ''
 		position: absolute
@@ -274,12 +275,28 @@
 		bottom: 0
 	&__image
 		width: 100%
-	.card-body
+		height: 100%
+		display: flex
+		align-items: center
+		justify-content: center
 		position: absolute
-		left: 0
-		bottom: 0
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		z-index: -1
+		border-radius: 10px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 10px
+	.card-body
 		width: 100%
-		padding: 18px 16px
+		padding: 18px 50px 23px 16px
+		margin: 170px 0 0
+		position: relative
+		z-index: 1
+		flex: none
 	.link-page
 		position: absolute
 		right: 19px
@@ -324,7 +341,7 @@
 		img
 			max-height: 100%
 
-.partners-slider
+.partners
 	.slick-arrow
 		border: 4px solid #FFB800
 		background: transparent

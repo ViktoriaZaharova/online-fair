@@ -405,8 +405,9 @@
 		<section class="new-manufacturers">
 			<div class="container">
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 d-flex align-items-center">
 						<h2>Новые производители на площадке</h2>
+						<div class="slider-nav new-manufacturers-slider__nav"></div>
 					</div>
 
 					<div class="col-12">
@@ -459,7 +460,7 @@
 									</ul>
 									<a href="#" class="manufacturer-card__image"><img src="img/manufacturer7.jpg" alt=""></a>
 									<div class="card-body">
-										<a href="#" class="card-title">ИП Сергиенко Г. И..</a>
+										<a href="#" class="card-title">ИП Сергиенко Г. И.</a>
 										<div class="name-business">Бессоновский район</div>
 
 										<a href="manufacturer-card.html" class="link-page">
@@ -534,8 +535,9 @@
 		<section class="partners">
 			<div class="container">
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 d-flex align-items-center">
 						<h2>Партнеры</h2>
+						<div class="slider-nav partners-slider__nav"></div>
 					</div>
 					<div class="col-12">
 						<div class="partners-slider">
@@ -629,12 +631,42 @@
 							<li><a href="statistic-data.html">статистические данные</a></li>
 							<li><a href="shops.html">розничным магазинам</a></li>
 						</ul>
-						<a href="#" class="politics-links" target="_blank">Политика обработки персональных данных</a>
-						<a href="#" class="developer" target="_blank"><img src="img/developer-logo.svg" alt=""></a>
+						<div class="footer-box">
+							<a href="#" class="politics-links" target="_blank">Политика обработки персональных данных</a>
+							<a href="#" class="developer" target="_blank"><img src="img/developer-logo.svg" alt=""></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="entranceModal" tabindex="-1" aria-labelledby="entranceModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Войти</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form">
+						<label>
+							<input type="text" placeholder="Ваш лошин" name="login">
+						</label>
+						<label>
+							<input type="text" placeholder="Ваш пароль" name="password" required>
+						</label>
+						<button type="submit" class="btn btn-accent"><span>отправить</span></button>
+					
+						<div class="consent">Нажимая кнопку «Отправить» Вы даете свое согласие на обработку персональных
+							данных
+						</div>
+					</form>
+				</div>
+				
+			</div>
+		</div>
 	</div>
 
 	<!-- add plugins js-->
