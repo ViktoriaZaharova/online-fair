@@ -257,6 +257,58 @@ button:hover, button:focus, .btn:hover, .btn:focus {
           justify-content: center;
 }
 
+.btn-border-orange {
+  color: #FFB800;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: 1px solid #FFB800;
+  position: relative;
+  z-index: 1;
+}
+.btn-border-orange .btn-icon {
+  margin: 0 0 0 10px;
+  width: 8px;
+  height: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: #FFB800;
+}
+.btn-border-orange:hover {
+  color: #333;
+}
+.btn-border-orange:hover:before, .btn-border-orange:hover::after {
+  width: 50%;
+}
+.btn-border-orange:hover .btn-icon {
+  fill: #333;
+}
+.btn-border-orange::before, .btn-border-orange::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  background: #FFB800;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+.btn-border-orange::before {
+  left: 0;
+  border-radius: 5px 0 0 5px;
+}
+.btn-border-orange::after {
+  right: 0;
+  border-radius: 0 5px 5px 0;
+}
+
 .form button {
   width: 100%;
 }
@@ -399,6 +451,7 @@ a.color-accent:hover {
   cursor: pointer;
   fill: none;
   stroke: #fff;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,4 +565,248 @@ a.color-accent:hover {
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.breadcrumb-nav {
+  margin: 37px 0 27px;
+}
+
+.breadcrumb {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 300;
+  color: #4D4D4D;
+}
+.breadcrumb a {
+  color: #4D4D4D;
+}
+.breadcrumb a:hover {
+  color: #5B9E44;
+}
+
+.breadcrumb-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  padding-right: 8px;
+  color: #4D4D4D;
+}
+
+.breadcrumb-item.active {
+  color: #4D4D4D;
+}
+
+.pagination-nav {
+  width: 100%;
+  margin: 34px 0 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0 auto;
+}
+
+.page-item:not(:first-child) .page-link {
+  margin: 0;
+}
+
+.page-item {
+  margin: 0 5px 0 0;
+}
+.page-item:first-child {
+  margin: 0 21px 0 0;
+}
+.page-item:last-child {
+  margin: 0 0 0 21px;
+}
+.page-item.active .page-link {
+  color: #666666;
+  background: transparent;
+  font-weight: bold;
+}
+
+.page-link {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  color: #FFB800;
+  line-height: 24px;
+  font-size: 20px;
+}
+.page-link:hover {
+  color: #666666;
+  background: transparent;
+}
+
+.page-link-prev, .page-link-next {
+  color: #B3B3B3;
+  font-size: 14px;
+  font-weight: 500;
+}
+.page-link-prev:hover, .page-link-next:hover {
+  color: #5B9E44;
+  background: transparent;
+}
+.page-link-prev.active, .page-link-next.active {
+  color: #FFB800;
+}
+.page-link-prev.active:hover, .page-link-next.active:hover {
+  color: #5B9E44;
+}
+
+.select-my {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #666666;
+  border-radius: 5px;
+  padding: 0 40px 0 15px;
+  background: url("../img/arrow-select.svg") no-repeat calc(100% - 15px) center;
+  background-size: 15px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dropdown-toggle {
+  border: 1px solid #666666;
+  border-radius: 5px;
+  padding: 9px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #666666;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+.dropdown-toggle:after {
+  background: url("../img/arrow-select.svg") no-repeat center;
+  background-size: 14px;
+  width: 14px;
+  height: 8px;
+  border: none;
+  margin: 0;
+}
+.dropdown-toggle:hover {
+  color: #666666;
+}
+
+.dropdown-menu {
+  width: 100%;
+  border: 1px solid #666666;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.page {
+  margin: 0 0 50px;
+}
+
+.tab-content {
+  width: 100%;
+}
+
+.nav-tabs {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+.nav-tabs .nav-item {
+  margin: 0 23px 30px 0;
+}
+.nav-tabs .nav-item:last-child {
+  margin: 0 0 30px;
+}
+.nav-tabs .nav-link {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background: #FFB800;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 22px;
+}
+.nav-tabs .nav-link:before, .nav-tabs .nav-link::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  background: #374D20;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+.nav-tabs .nav-link::before {
+  left: 0;
+  border-radius: 5px 0 0 5px;
+}
+.nav-tabs .nav-link::after {
+  right: 0;
+  border-radius: 0 5px 5px 0;
+}
+.nav-tabs .nav-link .btn-icon {
+  fill: #fff;
+  width: 8px;
+  height: 11px;
+  margin: 0 0 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.nav-tabs .nav-link .fill-none {
+  fill: none;
+  stroke: #fff;
+}
+.nav-tabs .nav-link .route-icon {
+  width: 16px;
+  height: 14px;
+}
+.nav-tabs .nav-link.active {
+  background: #FFB800;
+  color: #fff;
+}
+.nav-tabs .nav-link:hover::before, .nav-tabs .nav-link:hover::after {
+  width: 50%;
 }

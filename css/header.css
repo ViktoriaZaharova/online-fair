@@ -25,6 +25,9 @@ header {
   font-weight: bold;
   text-transform: uppercase;
 }
+.logo:hover {
+  color: #374D20;
+}
 
 .logo-icon {
   width: 35px;

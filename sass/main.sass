@@ -11,7 +11,6 @@
 		max-width: 540px
 		width: 100%
 		margin: 0 0 38px
-		
 
 .home-image
 	position: absolute
@@ -387,7 +386,7 @@
 		margin: 56px 0 0
 		max-width: 490px
 		font-size: 24px
-		line-height: 29px	
+		line-height: 29px
 
 .cooperation-content
 	width: calc(100% - 302px)
@@ -396,5 +395,446 @@
 	text-transform: uppercase
 	font-size: 24px
 	max-width: 480px
-	width: 100%	
+	width: 100%
 // cooperation end	
+
+// catalog-page	
+.page-catalog
+	margin: 0 0 100px
+
+.map-box
+	width: 100%
+	height: 1064px
+	display: none
+	iframe
+		width: 100%
+		height: 100%
+
+.sorting-wrapper
+	display: flex
+	align-items: center
+	color: #666666
+	font-size: 13px
+	font-weight: 500
+	p
+		margin: 0 16px 0 0
+		max-width: 95px
+
+.filter-wrapper
+	margin: 0 0 34px
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	flex-wrap: wrap
+
+.btn-toggle-map
+	margin: 0 0 0 35px
+	&.trigger
+		.btn-icon
+			position: relative
+			width: 14px
+			height: 14px
+			svg
+				display: none
+			&::before, &::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 7px
+				width: 1px
+				height: 100%
+				background: #FFB800
+			&::before
+				transform: rotate(45deg)
+			&:after
+				transform: rotate(135deg)
+		&:hover
+			.btn-icon
+				&::before, &::after
+					background: #333
+
+.list-category
+	width: 100%
+	margin: 0 0 36px
+	font-size: 14px
+	font-weight: 500
+	li
+		margin: 0 0 17px
+		&:last-child
+			margin: 0
+	&-link
+		display: flex
+		align-items: center
+		padding: 10px 22px
+		color: #5B9E44
+		border: 1px solid #5B9E44
+		border-radius: 5px
+		&:hover
+			background: #5B9E44
+			color: #fff
+		&.active
+			background: #5B9E44
+			color: #fff
+			.list-category-link__close
+				@include d-flex
+
+		&__close
+			display: none
+			align-items: center
+			justify-content: center
+			width: 14px
+			height: 14px
+			min-width: 14px
+			margin: 0 0 0 32px
+			position: relative
+			&::before, &::after
+				content: ''
+				position: absolute
+				left: 0
+				top: 7px
+				background: #fff
+				width: 100%
+				height: 1px
+			&::before
+				transform: rotate(45deg)
+			&:after
+				transform: rotate(135deg)
+
+.sidebar
+	width: 100%
+	max-height: 686px
+	overflow-y: auto
+	padding: 0 18px 0 0
+
+.panel_heading
+	width: 100%
+	color: #666666
+	border-bottom: 1px solid #B3B3B3
+	&:last-child
+		border: none
+	h3
+		font-size: 20px
+		font-weight: bold
+	h4
+		font-size: 16px
+		font-weight: bold
+	.panel_heading
+		border: none
+		margin: 0 0 2px
+		&:last-child
+			margin: 0
+		.block_title
+			&::after
+				background: url('../img/arrow-select2.svg') no-repeat center
+				background-size: 100%
+
+.block_title
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 15px 0
+	cursor: pointer
+	&::after
+		content: ''
+		@include d-flex
+		width: 14px
+		min-width: 14px
+		height: 8px
+		background: url('../img/arrow-select.svg') no-repeat center
+		background-size: 100%
+		margin: 0 0 0 auto
+	&.in
+		&::after
+			transform: rotate(180deg)
+
+.block_hover
+	width: 100%
+	padding: 4px 0 0 23px
+	display: none
+
+.list-products
+	li
+		margin: 0 0 4px
+		&:last-child
+			margin: 0
+		a
+			color: #666666
+			&:hover
+				color: $accent
+
+.sorting-category
+	margin: 18px 0 36px
+	width: 100%
+// catalog-page end	
+
+// about page
+.page-about
+	h1
+		color: #666666
+		font-weight: normal
+		margin: 0 0 18px
+		font-size: 36px
+		max-width: 679px
+	.box-text
+		line-height: 20px
+		max-width: 630px
+
+.about-image
+	border-radius: 10px
+	@include d-flex
+	min-width: 543px
+	float: right
+	img
+		border-radius: 10px
+
+.about-description
+	margin: 79px 0 0
+	font-size: 20px
+	p
+		margin: 0 0 20px
+
+// about page end
+
+// manufacturer page
+.page-manufacturer
+	h1
+		color: #000
+		margin: 0 0 10px
+		font-size: 24px
+		max-width: 350px
+
+.similar-manufacturers
+	margin: 60px 0 0
+
+.manufacturer-wrapper
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+
+.position
+	font-size: 24px
+	line-height: 29px
+	margin: 0 0 10px
+
+.manufacturer-photo
+	width: 197px
+	height: 197px
+	border-radius: 10px
+	filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.05))
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		border-radius: 10px
+
+.manufacturer-info
+	padding: 0 0 0 20px
+	display: flex
+	flex-direction: column
+	width: calc(100% - 197px)
+
+.manufacturer-nav
+	margin: auto 0 0
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+
+.links
+	display: flex
+	align-items: center
+	margin: 0 19px 0 0
+	&:last-child
+		margin: 0
+	&-icon
+		width: 18px
+		height: 18px
+		min-width: 18px
+		margin: 0 8px 0 0
+		@include d-flex
+		fill: $accent
+	&:hover
+		.links-icon
+			fill: $red
+
+.manufacturer-gallery
+	position: relative
+	z-index: 1
+	.slick-list
+		width: calc(100% + 325px)
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			width: 740px
+			height: 100%
+			background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+			z-index: 1
+	.slick-slide
+		margin: 0 20px 0 0
+		opacity: 0.5
+
+	.slick-current
+		opacity: 1
+		+.slick-slide
+		opacity: 1
+
+.manufacturer-gallery__item
+	@include d-flex
+	border-radius: 10px
+	width: 305px
+	height: 197px
+
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		border-radius: 10px
+
+.about-manufacturer
+	margin: 74px 0 80px
+	h2
+		margin: 0 0 10px
+
+.products-card
+	width: 100%
+	height: 100%
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05)
+	border-radius: 10px
+	background: #fff
+	&__image
+		width: 100%
+		@include d-flex
+		height: 197px
+		border-radius: 10px 10px 0px 0px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__body
+		width: 100%
+		height: calc(100% - 197px)
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		padding: 12px 14px 17px 9px
+	&__title
+		color: #000
+		font-weight: bold
+		margin: 0 0 25px
+		&:hover
+			color: $red
+	&__footer
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		color: $accent
+		font-size: 14px
+		margin: auto 0 0
+
+.price
+	font-weight: bold
+
+.btn-download
+	margin: 0 0 auto auto
+	padding: 10px 24px
+	.btn-icon
+		fill: #fff
+		width: 15px
+		height: 18px
+		min-width: 15px
+		margin: 0 0 0 10px
+
+.callback-manufacturer
+	margin: 38px 0 0
+
+.callback-manufacturer-wrapeper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	border: 1px solid #5B9E44
+	border-radius: 10px
+	padding: 20px
+	margin: 0 0 60px
+
+.callback-manufacturer-box
+	max-width: 521px
+	width: 100%
+	background: url('../img/callback-bg.jpg') no-repeat center
+	background-size: cover
+	border-radius: 5px
+	padding: 39px 36px 15px
+	h2
+		color: #fff
+		margin: 0 0 25px
+		text-transform: none
+
+.callback-manufacturer-form
+	width: 100%
+	label
+		margin: 0 0 15px
+	input
+		background: transparent
+		border: 1px solid #FFFFFF
+		color: #FFFFFF
+		&::placeholder
+			color: #FFFFFF
+	button
+		width: 100%
+		color: #666666
+		padding: 10px 22px
+		height: auto
+		font-weight: 500
+	.consent
+		margin: 14px 0 0
+		color: #FFFFFF
+		opacity: 1
+		font-size: 10px
+		max-width: 182px
+		text-align: left
+	textarea
+		height: 89px
+		border: 1px solid #FFFFFF
+		border-radius: 5px
+		color: #FFFFFF
+		background: transparent
+		padding: 24px 10px 10px
+		&::placeholder
+			color: #FFFFFF
+
+.callback-manufacturer-content
+	width: calc(100% - 521px)	
+
+.manufacturer-contacts-box
+	color: #000
+	margin: 0 0 23px
+	p
+		color: #5B9E44
+		margin: 0 0 10px
+	a
+		color: #5B9E44
+		font-weight: 500
+		&:hover
+			color: #000
+
+.requizites-box
+	display: none		
+
+.btn-toggle-requizites
+	padding: 10px 22px			
+
+.map-manufacturer
+	width: 100%
+	height: 448px
+	iframe
+		width: 100%
+		height: 100%
+
+.reviews-wrapper
+	margin: 55px auto 0
+	max-width: 725px
+			
+// manufacturer page end

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Онлайн Ярмарка 24/7</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<a href="index.html" class="logo">
+							<span class="logo-icon"><img src="img/logo.svg" alt=""></span>
+							<span class="logo-name">Онлайн Ярмарка</span>
+							<span class="logo-time color-red">24/7</span>
+						</a>
+
+						<nav class="nav-menu">
+							<a href="index.html" class="logo d-flex d-md-none">
+								<span class="logo-icon"><img src="img/logo-mobile.svg" alt=""></span>
+								<span class="logo-name">Онлайн Ярмарка</span>
+								<span class="logo-time color-red">24/7</span>
+							</a>
+							<ul class="menu my-ul">
+								<li><a href="about.html">о площадке</a></li>
+								<li><a href="statistic-data.html">статистические данные</a></li>
+								<li><a href="shops.html">розничным магазинам</a></li>
+							</ul>
+							<ul class="list-social my-ul d-flex d-md-none">
+								<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/tg.svg" alt=""></a></li>
+							</ul>
+							<a href="#" class="btn btn-white d-flex d-md-none">хочу сотрудничать</a>
+						</nav>
+
+						<ul class="list-social my-ul d-none d-md-flex">
+							<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/tg.svg" alt=""></a></li>
+						</ul>
+
+						<a href="#" class="btn-cabinet btn btn-white" data-bs-toggle="modal" data-bs-target="#entranceModal">
+							<span class="btn-text">войти</span>
+							<span class="btn-icon"><img src="img/user.svg" alt=""></span>
+						</a>
+
+						<div class="btn-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="page page-manufacturer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav aria-label="breadcrumb" class="breadcrumb-nav">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+								<li class="breadcrumb-item"><a href="catalog.html">Продукты и товары</a></li>
+								<li class="breadcrumb-item active" aria-current="page">ИП Носов А.В.</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="manufacturer-wrapper">
+							<div class="manufacturer-photo"><img src="img/manufacturer3.jpg" alt=""></div>
+							<div class="manufacturer-info">
+								<h1>Александр Владимирович Носов</h1>
+								<div class="position">Глава крестьянского (фермерского) хозяйства</div>
+								<div class="manufacturer-nav">
+									<a href="#" class="color-accent links">
+										<span class="links-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#print"></use>
+											</svg></span>
+										<span class="links-text">распечатать</span>
+									</a>
+
+									<a href="#" class="color-accent links">
+										<span class="links-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#share"></use>
+											</svg></span>
+										<span class="links-text">поделиться</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-lg-6">
+						<div class="manufacturer-gallery">
+							<div class="slide">
+								<div class="manufacturer-gallery__item"><img src="img/manufacturer-gallery1.jpg" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="manufacturer-gallery__item"><img src="img/manufacturer-gallery2.jpg" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="manufacturer-gallery__item"><img src="img/manufacturer-gallery3.jpg" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="manufacturer-gallery__item"><img src="img/manufacturer-gallery1.jpg" alt=""></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="about-manufacturer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>О производителе</h2>
+						<div class="box-text">
+							<p>Равным образом консультация с широким активом требуют определения и уточнения позиций, занимаемых
+								участниками в
+								отношении поставленных задач. Повседневная практика показывает, что реализация намеченных плановых
+								заданий
+								играет важную
+								роль в формировании существенных финансовых и административных условий. Идейные соображения высшего
+								порядка, а
+								также
+								консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании системы
+								обучения
+								кадров, соответствует насущным потребностям. Повседневная практика показывает, что новая модель
+								организационной
+								деятельности в значительной степени обуславливает создание направлений прогрессивного развития. Задача
+								организации, в
+								особенности же новая модель организационной деятельности обеспечивает широкому кругу (специалистов)
+								участие в
+								формировании новых предложений.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="products">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-7">
+						<h2>ПРОДУКТЫ И ТОВАРЫ ПРОИЗВОДИТЕЛЯ</h2>
+					</div>
+					<div class="col-12 col-lg-5 d-flex align-items-center">
+						<a href="#" class="btn btn-accent btn-download" download="#">
+							<span class="btn-text">скачать прайс-лист</span>
+							<span class="btn-icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#download"></use>
+								</svg></span>
+						</a>
+						<div class="slider-nav products-slider__nav"></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<div class="slider-products products-slider">
+							<div class="slide">
+								<div class="products-card">
+									<a href="#" class="products-card__img"><img src="img/product1-1.jpg" alt=""></a>
+									<div class="products-card__body">
+										<a href="#" class="products-card__title">Калач "Московский"</a>
+										<div class="products-card__footer">
+											<div class="weight">200 гр</div>
+											<div class="price">200 ₽/шт</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="products-card">
+									<a href="#" class="products-card__img"><img src="img/product1-2.jpg" alt=""></a>
+									<div class="products-card__body">
+										<a href="#" class="products-card__title">Торт "Прага"</a>
+										<div class="products-card__footer">
+											<div class="price">цена по запросу</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="products-card">
+									<a href="#" class="products-card__img"><img src="img/product1-3.jpg" alt=""></a>
+									<div class="products-card__body">
+										<a href="#" class="products-card__title">Калач "Московский"</a>
+										<div class="products-card__footer">
+											<div class="weight">200 гр</div>
+											<div class="price">200 ₽/шт</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="products-card">
+									<a href="#" class="products-card__img"><img src="img/product1-2.jpg" alt=""></a>
+									<div class="products-card__body">
+										<a href="#" class="products-card__title">Торт "Прага"</a>
+										<div class="products-card__footer">
+											<div class="price">цена по запросу</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="products-card">
+									<a href="#" class="products-card__img"><img src="img/product1-1.jpg" alt=""></a>
+									<div class="products-card__body">
+										<a href="#" class="products-card__title">Калач "Московский"</a>
+										<div class="products-card__footer">
+											<div class="weight">200 гр</div>
+											<div class="price">200 ₽/шт</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="products-card">
+									<a href="#" class="products-card__img"><img src="img/product1-2.jpg" alt=""></a>
+									<div class="products-card__body">
+										<a href="#" class="products-card__title">Торт "Прага"</a>
+										<div class="products-card__footer">
+											<div class="price">цена по запросу</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="products-card">
+									<a href="#" class="products-card__img"><img src="img/product1-3.jpg" alt=""></a>
+									<div class="products-card__body">
+										<a href="#" class="products-card__title">Калач "Московский"</a>
+										<div class="products-card__footer">
+											<div class="weight">200 гр</div>
+											<div class="price">200 ₽/шт</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="callback-manufacturer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="callback-manufacturer-wrapeper">
+							<div class="callback-manufacturer-content">
+								<div class="row">
+									<div class="col-12 col-sm-6">
+										<div class="manufacturer-contacts-box">
+											<p>Адрес</p>
+											<span>Пензенская область Камешкирский район с. Русский-Камешкир</span>
+										</div>
+										<div class="manufacturer-contacts-box">
+											<p>Способ доставки</p>
+											<span>только самовывоз</span>
+										</div>
+										<div class="manufacturer-contacts-box">
+											<p>Минимальная сумма заказа</p>
+											<span>Без ограничений</span>
+										</div>
+
+										<div class="manufacturer-contacts-box requizites-box">
+											<p>Реквизиты</p>
+											<span>ОГРН: 192136238</span>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-6">
+										<div class="manufacturer-contacts-box">
+											<p>Адрес места отгрузки товаров</p>
+											<span>Пензенская область Камешкирский район с. Русский-Камешкир</span>
+										</div>
+										<div class="manufacturer-contacts-box">
+											<p>Контактное лицо</p>
+											<span>Владимир Полетучий</span>
+										</div>
+										<div class="manufacturer-contacts-box">
+											<a href="tel:+79227974323">+7 (922) 797-43-23</a>
+											<a href="mailto:rubak-vp@mail.ru">rubak-vp@mail.ru</a>
+										</div>
+										<div class="manufacturer-contacts-box requizites-box">
+											<p>Реквизиты</p>
+											<span>ОГРН: 192136238</span>
+										</div>
+									</div>
+
+									<div class="col-12">
+										<a href="#" class="btn btn-accent btn-toggle-requizites"><span>показать реквизиты</span></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="callback-manufacturer-box">
+								<h2>Связаться с производителем</h2>
+								<form method="post" class="callback-manufacturer-form">
+									<div class="row">
+										<div class="col-12 col-sm-6">
+											<label><input type="text" placeholder="Как к вам обращаться?" name="name"></label>
+										</div>
+										<div class="col-12 col-sm-6">
+											<label><input type="text" placeholder="Телефон" name="phone"></label>
+										</div>
+										<div class="col-12 col-sm-6">
+											<label><textarea name="message" placeholder="Сообщение"></textarea></label>
+										</div>
+										<div class="col-12 col-sm-6">
+											<button type="submit" class="btn btn-white"><span>отправить</span></button>
+											<div class="consent">Нажимая кнопку «Отправить» Вы даете свое согласие на обработку персональных
+												данных</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="btn btn-orange nav-link active" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#tab1"
+									type="button" role="tab" aria-controls="tab1" aria-selected="true">
+									<span class="btn-text">карта фермеров</span>
+									<span class="btn-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#location"></use>
+										</svg></span>
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="btn btn-orange nav-link" id="nav-tab2" data-bs-toggle="tab" data-bs-target="#tab2"
+									type="button" role="tab" aria-controls="tab2" aria-selected="false">
+									<span class="btn-text">построить маршрут</span>
+									<span class="btn-icon fill-none route-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#route"></use>
+										</svg></span>
+								</button>
+							</li>
+						</ul>
+
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-tab1">
+								<div class="map-manufacturer">
+									<iframe src="https://yandex.ru/map-widget/v1/-/CCUrYHsPXA" frameborder="1" allowfullscreen="true"
+										style="position:relative;"></iframe>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-tab2">
+								<div class="map-manufacturer">
+									<iframe src="https://yandex.ru/map-widget/v1/-/CCUrYHsPXA" frameborder="1" allowfullscreen="true"
+										style="position:relative;"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="reviews-wrapper">
+							<img src="img/reviews-image.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="similar-manufacturers">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center">
+						<h2>ПОХОЖИЕ ПРОИЗВОДИТЕЛИ</h2>
+						<div class="slider-nav popular-manufacturers-slider__nav"></div>
+					</div>
+
+					<div class="col-12">
+						<div class="slider-products popular-manufacturers-slider">
+							<div class="slide">
+								<div class="card">
+									<a href="manufacturer-card.html" class="card-image"><img src="img/manufacturer1.jpg" alt="">
+									</a>
+									<div class="card-body">
+										<a href="manufacturer-card.html" class="card-title">ИП Советкина Н.Н.</a>
+										<div class="name-business">Бессоновский район</div>
+
+										<ul class="list-tags my-ul">
+											<li><a href="#">животноводство</a></li>
+											<li><a href="#">овощи</a></li>
+										</ul>
+
+										<a href="manufacturer-card.html" class="link-page">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-right"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="card">
+									<a href="manufacturer-card.html" class="card-image"><img src="img/manufacturer2.jpg" alt="">
+									</a>
+									<div class="card-body">
+										<a href="manufacturer-card.html" class="card-title">ГКХ Кочетов Н.Р.</a>
+										<div class="name-business">Городищенский район</div>
+										<ul class="list-tags my-ul">
+											<li><a href="#">животноводство</a></li>
+											<li><a href="#">овощи</a></li>
+										</ul>
+										<a href="manufacturer-card.html" class="link-page">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-right"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="card">
+									<a href="manufacturer-card.html" class="card-image"><img src="img/manufacturer3.jpg" alt="">
+									</a>
+									<div class="card-body">
+										<a href="manufacturer-card.html" class="card-title">ИП Сергиенко Г. И.</a>
+										<div class="name-business">Бессоновский район</div>
+										<ul class="list-tags my-ul">
+											<li><a href="#">животноводство</a></li>
+											<li><a href="#">овощи</a></li>
+										</ul>
+										<a href="manufacturer-card.html" class="link-page">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-right"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="card">
+									<a href="manufacturer-card.html" class="card-image"><img src="img/manufacturer4.jpg" alt="">
+									</a>
+									<div class="card-body">
+										<a href="manufacturer-card.html" class="card-title">ГКХ Кочетов Н.Р.</a>
+										<div class="name-business">Городищенский район</div>
+										<ul class="list-tags my-ul">
+											<li><a href="#">животноводство</a></li>
+											<li><a href="#">овощи</a></li>
+										</ul>
+										<a href="manufacturer-card.html" class="link-page">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-right"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="card">
+									<a href="manufacturer-card.html" class="card-image">
+										<img src="img/manufacturer1" alt="">
+									</a>
+									<div class="card-body">
+										<a href="manufacturer-card.html" class="card-title">ИП Сергиенко Г. И.</a>
+										<div class="name-business">Бессоновский район</div>
+										<ul class="list-tags my-ul">
+											<li><a href="#">животноводство</a></li>
+											<li><a href="#">овощи</a></li>
+										</ul>
+										<a href="manufacturer-card.html" class="link-page">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-right"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<a href="index.html" class="logo-footer">
+							<span class="logo-footer__icon"><img src="img/logo-footer1.png" alt=""></span>
+							<span class="logo-footer__image"><img src="img/logo-footer2.png" alt=""></span>
+						</a>
+						<ul class="menu my-ul">
+							<li><a href="catalog.html">продукты и товары</a></li>
+							<li><a href="about.html">о площадке</a></li>
+							<li><a href="statistic-data.html">статистические данные</a></li>
+							<li><a href="shops.html">розничным магазинам</a></li>
+						</ul>
+						<div class="footer-box">
+							<a href="#" class="politics-links" target="_blank">Политика обработки персональных данных</a>
+							<a href="#" class="developer" target="_blank"><img src="img/developer-logo.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="entranceModal" tabindex="-1" aria-labelledby="entranceModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Войти</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form">
+						<label>
+							<input type="text" placeholder="Ваш лошин" name="login">
+						</label>
+						<label>
+							<input type="text" placeholder="Ваш пароль" name="password" required>
+						</label>
+						<button type="submit" class="btn btn-accent"><span>отправить</span></button>
+
+						<div class="consent">Нажимая кнопку «Отправить» Вы даете свое согласие на обработку персональных
+							данных
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
